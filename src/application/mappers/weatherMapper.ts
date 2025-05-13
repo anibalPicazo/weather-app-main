@@ -7,7 +7,7 @@ export const WeatherMapper = {
       tempMin: data.main.temp_min,
       tempMax: data.main.temp_max,
       currentTemp: data.main.temp,
-      condition: 'sunny', // data.weather[0].description,
+      condition: data.weather[0].description,
     };
   },
 };
