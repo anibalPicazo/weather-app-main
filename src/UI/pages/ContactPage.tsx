@@ -39,7 +39,7 @@ const ContactPage = () => {
         onSubmit={handleSignUp}
       >
         <div className="name w-full">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label  className="block text-sm font-medium text-gray-300">
             Name*
           </label>
           <input
@@ -54,7 +54,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="w-full">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label  className="block text-sm font-medium text-gray-300">
             Date of Birth*
           </label>
           <input
@@ -68,7 +68,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="w-full">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label  className="block text-sm font-medium text-gray-300">
             City*
           </label>
           <input
@@ -82,7 +82,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="w-full">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label className="block text-sm font-medium text-gray-300">
             Email*
           </label>
           <input
@@ -96,7 +96,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="w-full">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label className="block text-sm font-medium text-gray-300">
             Phone Number*
           </label>
           <input
