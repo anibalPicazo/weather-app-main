@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaCity, FaCloudSun, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -6,8 +7,8 @@ import { Link } from "react-router-dom";
   
 const SideBar: React.FC = () => {
     const [isWeatherDropdownOpen, setWeatherDropdownOpen] = useState(false);
-
-const toggleWeatherDropdown = () => {
+    const { t } = useTranslation();
+    const toggleWeatherDropdown = () => {
     setWeatherDropdownOpen(!isWeatherDropdownOpen);
   };
   
@@ -21,7 +22,7 @@ const toggleWeatherDropdown = () => {
                 className="flex items-center gap-3 text-gray-200 hover:text-yellow-400 font-medium focus:outline-none"
               >
                 <FaCloudSun className="text-yellow-400" />
-                Weather
+                {t('Weather')}
               </button>
               {isWeatherDropdownOpen && (
                 <ul className="mt-2 space-y-3 pl-6">
@@ -31,7 +32,7 @@ const toggleWeatherDropdown = () => {
                       to="/weather/london"
                       className="text-gray-200 hover:text-gray-400"
                     >
-                      London
+                      {t('London')}
                     </Link>
                   </li>
                   <li className="flex items-center gap-3">
@@ -40,7 +41,7 @@ const toggleWeatherDropdown = () => {
                       to="/weather/dublin"
                       className="text-gray-200 hover:text-gray-400"
                     >
-                      Dublin
+                      {t('Dublin')}
                     </Link>
                   </li>
                   <li className="flex items-center gap-3">
@@ -49,7 +50,7 @@ const toggleWeatherDropdown = () => {
                       to="/weather/madrid"
                       className="text-gray-200 hover:text-gray-400"
                     >
-                      Madrid
+                      {t('Madrid')}
                     </Link>
                   </li>
                 </ul>
@@ -63,7 +64,7 @@ const toggleWeatherDropdown = () => {
                 to="/contact"
                 className="text-gray-200 hover:text-blue-400 font-medium"
               >
-                Contact
+                {t('Contact')}
               </Link>
             </li>
         </nav>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUseCase } from "../../application/UseCases/loginUseCase";
-import "../../index.css"; // Asegúrate de que Tailwind esté configurado correctamente
+import "../../index.css";
 import useAuthStore from "../../store/authStore";
 
 const LoginPage: React.FC = () => {

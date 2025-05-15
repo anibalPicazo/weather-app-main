@@ -1,6 +1,5 @@
-const API_KEY = "1bb6f820f59fe1092c680f70ee4abc1f"; // reemplaza con tu clave real
-const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
-// todo: get by env
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL
 export const WeatherApi = {
   async fetchByCity(city: string) {
     const response = await fetch(

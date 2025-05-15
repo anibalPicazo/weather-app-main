@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {
   const [sended, setSended] = useState(false);
@@ -9,6 +10,7 @@ const ContactPage = () => {
     email: "",
     phone: "",
   });
+  const {t} = useTranslation()
 
   const isFormValid = Object.values(formData).every((value) => value.trim() !== "");
 
@@ -31,7 +33,7 @@ const ContactPage = () => {
     <div>
       {sended && (
         <div className="mb-6 bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500">
-          Formulario enviado!
+           {t("Thank you for signing up!")}
         </div>
       )}
       <form
@@ -40,7 +42,7 @@ const ContactPage = () => {
       >
         <div className="name w-full">
           <label  className="block text-sm font-medium text-gray-300">
-            Name*
+             {t("Name")}*
           </label>
           <input
             type="text"
@@ -55,7 +57,8 @@ const ContactPage = () => {
         </div>
         <div className="w-full">
           <label  className="block text-sm font-medium text-gray-300">
-            Date of Birth*
+            
+            {t("Date of Birth")}*
           </label>
           <input
             type="date"
@@ -69,7 +72,8 @@ const ContactPage = () => {
         </div>
         <div className="w-full">
           <label  className="block text-sm font-medium text-gray-300">
-            City*
+            
+            {t("City")}*
           </label>
           <input
             type="text"
@@ -83,7 +87,8 @@ const ContactPage = () => {
         </div>
         <div className="w-full">
           <label className="block text-sm font-medium text-gray-300">
-            Email*
+            {t("Email")}*
+
           </label>
           <input
             type="email"
@@ -97,7 +102,8 @@ const ContactPage = () => {
         </div>
         <div className="w-full">
           <label className="block text-sm font-medium text-gray-300">
-            Phone Number*
+            {t("Phone Number")}*
+
           </label>
           <input
             type="tel"
@@ -106,14 +112,14 @@ const ContactPage = () => {
             value={formData.phone}
             onChange={handleInputChange}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
-            placeholder="Min 8 Characters"
+            placeholder={t('Min 8 characters')}
             required
           />
         </div>
         <div>
           <input
             type="submit"
-            value="Register"
+            value={t('Register')}
             disabled={!isFormValid}
             className={`border border-gray-300 text-sm rounded-lg block w-full p-2.5 font-bold ${
               isFormValid
