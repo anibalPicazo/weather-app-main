@@ -9,7 +9,7 @@ export const WeatherMapper = {
       currentTemp: data.main.temp,
       condition: data.weather[0].description,
       icon: data.weather[0].icon,
-      groupCondition: 200
+      groupCondition: data.weather[0].id
 
     };
   },

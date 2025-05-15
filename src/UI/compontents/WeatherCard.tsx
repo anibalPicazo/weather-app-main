@@ -17,7 +17,7 @@ export const WeatherCard = ({ city, tempMin, tempMax, currentTemp, condition,ico
   const iconSrc = getWeatherIcon(icon);
   const conditionStyle = getConditionStyles(group);
   return (
-    <div       className={`shadow-md rounded-lg p-6 max-w-sm mx-auto border border-gray-200 ${conditionStyle}`}
+    <div       className={`shadow-md rounded-lg p-6 max-w-sm mx-auto  ${conditionStyle}`}
 >
       <div className="flex items-center justify-center mb-4">
         <h2 className="text-xl capitalize ">{city}</h2>
