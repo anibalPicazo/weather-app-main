@@ -8,6 +8,9 @@ export const WeatherMapper = {
       tempMax: data.main.temp_max,
       currentTemp: data.main.temp,
       condition: data.weather[0].description,
+      icon: data.weather[0].icon,
+      groupCondition: 200
+
     };
   },
 };

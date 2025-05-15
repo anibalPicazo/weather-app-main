@@ -17,6 +17,8 @@ const WeatherPage = () => {
       tempMax={weather.tempMax}
       currentTemp={weather.currentTemp} 
       condition={weather.condition}
+      icon={weather.icon}
+      group={weather.groupCondition}
     />
   );
 };

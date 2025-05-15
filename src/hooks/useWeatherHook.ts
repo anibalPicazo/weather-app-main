@@ -12,7 +12,6 @@ export const useWeather = (city: string) => {
       try {
         setIsLoading(true);
         const data = await getWeatherByCity(city);
-
         setWeather(data);
       } catch (e) {
         setError("No se pudo obtener el clima");
