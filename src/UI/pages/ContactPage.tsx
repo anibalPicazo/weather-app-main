@@ -41,7 +41,7 @@ const ContactPage = () => {
         onSubmit={handleSignUp}
       >
         <div className="name w-full">
-          <label  className="block text-sm font-medium text-gray-300">
+          <label  htmlFor="name" className="block text-sm font-medium text-gray-300">
              {t("Name")}*
           </label>
           <input
@@ -56,7 +56,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="w-full">
-          <label  className="block text-sm font-medium text-gray-300">
+          <label  htmlFor="dateBirth" className="block text-sm font-medium text-gray-300">
             
             {t("Date of Birth")}*
           </label>
@@ -71,7 +71,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="w-full">
-          <label  className="block text-sm font-medium text-gray-300">
+          <label htmlFor="city" className="block text-sm font-medium text-gray-300">
             
             {t("City")}*
           </label>
@@ -86,7 +86,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="w-full">
-          <label className="block text-sm font-medium text-gray-300">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-300">
             {t("Email")}*
 
           </label>
@@ -101,7 +101,7 @@ const ContactPage = () => {
           />
         </div>
         <div className="w-full">
-          <label className="block text-sm font-medium text-gray-300">
+          <label htmlFor="phone" className="block text-sm font-medium text-gray-300">
             {t("Phone Number")}*
 
           </label>
