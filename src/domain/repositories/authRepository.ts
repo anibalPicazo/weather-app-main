@@ -1,4 +1,4 @@
 
 export interface AuthRepository {
-    loginUser(email: string, password: string): Boolean;
+    loginUser(email: string, password: string): boolean;
 }

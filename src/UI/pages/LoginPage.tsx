@@ -21,7 +21,7 @@ const { login } = useAuthStore()
         setError("Invalid email or password");
       }
     } catch (err) {
-      setError("An error occurred during login");
+      setError(err as string);
     }
   };
 
