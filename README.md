@@ -10,6 +10,8 @@ Para correr la aplicación debes implementar el .env tal y como está el .env.ex
 
 La aplicación cuenta con Test unitarios con Vitest y Linter con prettier para cumplir con reglas de buen uso.
 
+La aplicación cuenta con una **integración** continua con GitHub.
+
 
 
 
