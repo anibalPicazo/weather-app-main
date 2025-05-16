@@ -1,4 +1,3 @@
-// eslint.config.js
 import js from "@eslint/js";
 import pluginReact from "eslint-plugin-react";
 import { defineConfig } from "eslint/config";
@@ -33,7 +32,6 @@ export default defineConfig([
   },
   pluginReact.configs.flat.recommended,
   tseslint.configs.recommended,
-  // 👇 Este objeto debe ir al final para sobrescribir la regla
   {
     rules: {
       "react/react-in-jsx-scope": "off",

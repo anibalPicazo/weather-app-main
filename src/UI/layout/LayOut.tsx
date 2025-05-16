@@ -39,8 +39,7 @@ const LayOut: React.FC = () => {
             >
               <FaBars className="text-2xl" />
             </button>
-            <h1 className="text-xl font-bold text-gray-200">Weather App</h1>
-          </div>
+<img src="/app.png" alt="icon" className="w-10 h-10" />          </div>
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <FaGlobe className="text-gray-400" />

@@ -1,8 +1,8 @@
 import { Weather } from "../../domain/models/Weather";
+import { WeatherApiDTO } from '../../infrastructure/dto/weatherApiDTO';
 
 export const WeatherMapper = {
-  //todo tipar data con weatherApiResponse
-  fromDto: (data: any): Weather => {
+  fromDto: (data: WeatherApiDTO): Weather => {
     return {
       tempMin: data.main.temp_min,
       tempMax: data.main.temp_max,
